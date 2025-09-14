@@ -1,0 +1,558 @@
+{
+  "302Ai": {
+  },
+  "alerts": {
+    "cannotExportEmptyCanvas": "Kan ikkje eksportere eit tomt lerret.",
+    "cannotRestoreFromImage": "Scena kunne ikkje gjenopprettast frå denne biletfila",
+    "clearReset": "Dette vil tømme lerretet. Er du sikker?",
+    "collabOfflineWarning": "Ingen nettverk.\nYour changes will not be saved!",
+    "collabStopOverridePrompt": "Viss du avsluttar økta overskriv du den førre, lokalt lagra teikninga di. Er du sikker?\n\n(Ønsker du å halde fram med denne? Då er det berre å lukke denne fana.)",
+    "confirmAddLibrary": "Dette vil legge til {{numShapes}} form(er) i biblioteket ditt. Er du sikker?",
+    "couldNotCopyToClipboard": "Kan ikke kopiere til klipbord.",
+    "couldNotCreateShareableLink": "Kunne ikkje lage delingslenke.",
+    "couldNotCreateShareableLinkTooBig": "Kunne ikkje opprette deleleg lenke: scena er for stor",
+    "couldNotLoadInvalidFile": "Kunne ikkje laste inn ugyldig fil",
+    "decryptFailed": "Kunne ikkje dekryptere data.",
+    "errorAddingToLibrary": "Kunne ikkje legge elementet i biblioteket",
+    "errorRemovingFromLibrary": "Kunne ikkje fjerne elementet frå biblioteket",
+    "imageDoesNotContainScene": "Dette biletet ser ikkje ut til å ha noko scenedata. Har du skrutt på innbygging av scene medan eksporteringa heldt på?",
+    "importBackendFailed": "Importering av backend feila.",
+    "invalidEncryptionKey": "Krypteringsnøkkelen må ha 22 teikn. Sanntidssamarbeid er deaktivert.",
+    "invalidSceneUrl": "Kunne ikkje hente noko scene frå den URL-en. Ho er anten øydelagd eller inneheld ikkje gyldig Excalidraw JSON-data.",
+    "loadSceneOverridePrompt": "Innlasting av ekstern teikning erstattar ditt eksisterande innhald. Ynskjer du å fortsette?",
+    "removeItemsFromsLibrary": "Slette {{count}} element frå biblioteket?",
+    "resetLibrary": "Dette vil fjerne alt innhald frå biblioteket. Er du sikker?",
+    "uploadedSecurly": "Opplastinga er kryptert og er ikkje mogleg å lese av Excalidraw-serveren eller tredjepartar."
+  },
+  "auth": {
+    "code": "Må dele kode",
+    "code_error": "Feil for å dele koden",
+    "confirm": "bekreft",
+    "disable_tools": "Search tool disabled",
+    "dlete_tools": "The search tool has been removed",
+    "input_placeholder": "Vennligst skriv inn delekoden",
+    "more": "Vennligst besøk meg.",
+    "network_error": "nettverksfeil",
+    "not_error": "ukjent feil",
+    "remember": "Husk å dele kode",
+    "verification": "Skaperen har aktivert bekreftelse."
+  },
+  "buttons": {
+    "cancel": "Avbryt",
+    "clear": "Tøm",
+    "clearReset": "Tilbakestill lerretet",
+    "close": "Lukk",
+    "confirm": "Stadfest",
+    "copyToClipboard": "Kopier til utklippstavla",
+    "createNewRoom": "Lag nytt rom",
+    "darkMode": "Mørk modus",
+    "done": "Ferdig",
+    "edit": "Rediger",
+    "embed": "Bytt embedding",
+    "embeddableInteractionButton": "Klikk for å starte interaksjon",
+    "exitZenMode": "Avslutt zen-modus",
+    "export": "Spar til",
+    "exportImage": "Eksport bilde",
+    "exportJSON": "Eksporter til fil",
+    "fullScreen": "Fullskjerm",
+    "getShareableLink": "Hent delingslenke",
+    "lightMode": "Lys modus",
+    "load": "Åpne",
+    "menu": "Meny",
+    "objectsSnapMode": "Adsorb til objektet",
+    "publishLibrary": "Publiser",
+    "redo": "Gjer om",
+    "remove": "Fjern",
+    "resetLibrary": "Nullstill bibliotek",
+    "resetZoom": "Nullstill zoom",
+    "save": "Lagre til noverande fil",
+    "saveAs": "Lagre som",
+    "scrollBackToContent": "Skroll tilbake til innhald",
+    "selectLanguage": "Vel språk",
+    "submit": "Send inn",
+    "undo": "Angre",
+    "zenMode": "Zen-modus",
+    "zoomIn": "Zoom inn",
+    "zoomOut": "Zoom ut"
+  },
+  "canvasError": {
+    "cannotShowPreview": "Kan ikkje vise førehandsvising",
+    "canvasTooBig": "Lerretet er mogleg for stort.",
+    "canvasTooBigTip": "Tips: prøv å flytte elementa som er lengst frå kvarandre, litt nærare kvarandre."
+  },
+  "clearCanvasDialog": {
+    "title": "Tøm lerretet"
+  },
+  "colorPicker": {
+    "colors": "farge",
+    "hexCode": "Hekseksimal verdi",
+    "mostUsedCustomColors": "Vanlige custom farger",
+    "noShades": "Det finnes ingen tilgjengelige endringer for denne fargen",
+    "shades": "Fargetone, lys og mørke"
+  },
+  "colors": {
+    "black": "Svart",
+    "blue": "blå",
+    "bronze": "Eldre kopper",
+    "cyan": "ung",
+    "grape": "Purple red",
+    "gray": "aske",
+    "green": "Grønt",
+    "orange": "oransje",
+    "pink": "rosa",
+    "red": "Rød",
+    "teal": "Blå grønt",
+    "transparent": "Gjennomsiktig",
+    "violet": "Blå Purple",
+    "white": "hvit",
+    "yellow": "gul"
+  },
+  "commandPalette": {
+    "shortcuts": {
+      "confirm": "bekreft"
+    }
+  },
+  "confirmDialog": {
+    "removeItemsFromLib": "Fjern valde element frå biblioteket",
+    "resetLibrary": "Tilbakestill bibliotek"
+  },
+  "encrypted": {
+    "link": "Blogginnlegg om ende-til-ende-kryptering i Excalidraw",
+    "tooltip": "Teikningane dine er ende-til-ende-krypterte slik at Excalidraw sine serverar aldri får sjå dei."
+  },
+  "errorDialog": {
+    "title": "Feil"
+  },
+  "errorSplash": {
+    "clearCanvasCaveat": " Dette vil føre til tap av arbeid ",
+    "clearCanvasMessage": "Om ny sidelasting ikkje fungerer, prøv <button>å tømme lerretet.</button>",
+    "headingMain": "Ein feil oppstod. Prøv <button>å laste sida på nytt.</button>",
+    "openIssueMessage": "Vi er veldig nøye med å ikkje inkludere scene-opplysingane dine i feilmeldinga. Viss scena di ikkje er privat kan du vurdere å følge opp i <button>feilrapporteringssystemet vårt.</button> Ta med opplysingane nedanfor ved å kopiere og lime inn i GitHub-saka.",
+    "sceneContent": "Scene-innhald:",
+    "trackedToSentry": "Feilen med identifikator {{eventId}} vart logga i systemet vårt."
+  },
+  "errors": {
+    "asyncPasteFailedOnParse": "Kan ikke paste.",
+    "asyncPasteFailedOnRead": "Kunne ikke pastere (kan ikke lese systemklipbord).",
+    "brave_measure_text_error": {
+      "line1": "Det virker som om du bruker Brave Browser og har enablet <bold>aktivt blokkert fingeravtrykksgjenkjenning </bold>setting.",
+      "line2": "Dette kan skade tegningene <bold>Tekst-element</bold>。",
+      "line3": "",
+      "line4": ""
+    },
+    "cannotResolveCollabServer": "Kunne ikkje kople til samarbeidsserveren. Ver vennleg å oppdatere inn sida og prøv på nytt.",
+    "collabSaveFailed": "",
+    "collabSaveFailed_sizeExceeded": "",
+    "copyToSystemClipboardFailed": "",
+    "failedToFetchImage": "",
+    "fileTooBig": "Fila er for stor. Maksimal tillate storleik er {{maxSize}}.",
+    "imageInsertError": "Kunne ikkje sette inn biletet. Prøv igjen seinare...",
+    "imageToolNotSupported": "",
+    "importLibraryError": "",
+    "invalidSVGString": "Ugyldig SVG.",
+    "libraryElementTypeError": {
+      "embeddable": "",
+      "iframe": "",
+      "image": ""
+    },
+    "svgImageInsertError": "Kunne ikkje sette inn SVG-biletet. SVG-koden ser ugyldig ut.",
+    "unsupportedFileType": "Filtypen er ikkje støtta."
+  },
+  "exportDialog": {
+    "disk_button": "Lagre til fil",
+    "disk_details": "Eksporter scenedataa til ei fil du kan importere seinare.",
+    "disk_title": "Lagre til disk",
+    "excalidrawplus_button": "Eksporter",
+    "excalidrawplus_description": "Lagre scena til Excalidraw+-arbeidsområdet ditt.",
+    "excalidrawplus_exportError": "Kunne ikkje eksportere til Excalidraw+ akkurat no...",
+    "link_button": "Eksporter til lenke",
+    "link_details": "Eksporter som skrivebeskytta lenke.",
+    "link_title": "Deleleg lenke"
+  },
+  "headings": {
+    "canvasActions": "Handlingar: lerret",
+    "selectedShapeActions": "Handlingar: valt objekt",
+    "shapes": "Formar"
+  },
+  "helpDialog": {
+    "blog": "Les bloggen vår",
+    "click": "klikk",
+    "curvedArrow": "Boga pil",
+    "curvedLine": "Boga linje",
+    "deepBoxSelect": "Marker djupt inni boksen og forhindr flytting",
+    "deepSelect": "Marker djupt",
+    "documentation": "Dokumentasjon",
+    "doubleClick": "dobbelklikk",
+    "drag": "drag",
+    "editLineArrowPoints": "",
+    "editText": "",
+    "editor": "Redigering",
+    "github": "Funne eit problem? Send inn",
+    "howto": "Følg vegleiinga vår",
+    "movePageLeftRight": "",
+    "movePageUpDown": "",
+    "or": "eller",
+    "preventBinding": "Hindre pilkopling",
+    "shortcuts": "Tastatursnarvegar",
+    "textFinish": "Fullfør redigering (teksthandsamar)",
+    "textNewLine": "Legg til ny linje (teksthandsamar)",
+    "title": "Hjelp",
+    "toggleElementLock": "",
+    "tools": "",
+    "view": "Vising",
+    "zoomToFit": "Zoom for å sjå alle elementa",
+    "zoomToSelection": "Zoom til utval"
+  },
+  "hints": {
+    "bindTextToElement": "Trykk på enter for å legge til tekst",
+    "canvasPanning": "",
+    "deepBoxSelect": "Hald inne Ctrl / Cmd for å velje djupt, og forhindre flytting",
+    "disableSnapping": "",
+    "embeddable": "",
+    "eraserRevert": "Hald inne Alt for å reversere markering av element for sletting",
+    "firefox_clipboard_write": "",
+    "freeDraw": "Klikk og drag, slepp når du er ferdig",
+    "lineEditor_info": "",
+    "lineEditor_nothingSelected": "Vel eit punkt å redigere (hald inne SHIFT for å velje fleire),\neller hald inne Alt og klikk for å legge til nye punkt",
+    "lineEditor_pointSelected": "Trykk på Slett for å fjerne punkt(a),\nCtrl / Cmd+D for å duplisere, eller drag for å flytte",
+    "linearElement": "Klikk for å starte linje med fleire punkt, eller drag for ei enkel linje",
+    "linearElementMulti": "Klikk på siste punkt eller trykk Escape eller Enter for å fullføre",
+    "lockAngle": "Du kan begrense vinkelen ved å holde nede SKIFT",
+    "placeImage": "Klikk for å plassere biletet, eller klikk og drag for å velje storleik manuelt",
+    "publishLibrary": "Publiser ditt eige bibliotek",
+    "resize": "Du kan halde fram med forholdet ved å trykke SHIFT medan du endrar storleik,\ntrykk ALT for å endre storleiken frå midten",
+    "resizeImage": "Du kan endre storleiken fritt ved å halde inne SHIFT,\nhald ALT for å endre storleik frå sentrum",
+    "rotate": "Du kan låse vinklane ved å halde SHIFT medan du roterer",
+    "text": "Tips: du kan òg leggje til tekst ved å dobbeltklikke kor som helst med utvalgsverktyet",
+    "text_editing": "Trykk Escape eller CtrlOrCmd+ENTER for å fullføre redigeringa",
+    "text_selected": "Dobbelklikk eller trykk ENTER for å redigere teksta"
+  },
+  "imageExportDialog": {
+    "button": {
+      "copyPngToClipboard": "",
+      "exportToPng": "",
+      "exportToSvg": "SVG"
+    },
+    "header": "",
+    "label": {
+      "darkMode": "",
+      "embedScene": "",
+      "onlySelected": "",
+      "padding": "",
+      "scale": "",
+      "withBackground": ""
+    },
+    "title": {
+      "copyPngToClipboard": "",
+      "exportToPng": "",
+      "exportToSvg": ""
+    },
+    "tooltip": {
+      "embedScene": ""
+    }
+  },
+  "labels": {
+    "actions": "Handlingar",
+    "addToLibrary": "Legg til i bibliotek",
+    "addWatermark": "Legg til «Laga med Excalidraw»",
+    "align": "Juster",
+    "alignBottom": "Juster til botn",
+    "alignLeft": "Juster til venstre",
+    "alignRight": "Juster til høgre",
+    "alignTop": "Juster til topp",
+    "architect": "Arkitekt",
+    "arrowhead_arrow": "Pil",
+    "arrowhead_bar": "Stolpe",
+    "arrowhead_circle": "",
+    "arrowhead_circle_outline": "",
+    "arrowhead_diamond": "",
+    "arrowhead_diamond_outline": "",
+    "arrowhead_none": "Ingen",
+    "arrowhead_triangle": "Trekant",
+    "arrowhead_triangle_outline": "",
+    "arrowheads": "Pilhovud",
+    "artist": "Kunstnar",
+    "background": "Bakgrunn",
+    "bindText": "",
+    "bold": "Tjukk",
+    "bringForward": "Flytt framover",
+    "bringToFront": "Flytt heilt fram",
+    "canvasBackground": "Lerretsbakgrunn",
+    "canvasColors": "Brukt på lerretet",
+    "cartoonist": "Teiknar",
+    "center": "Midstill",
+    "centerHorizontally": "Midtstill horisontalt",
+    "centerVertically": "Midtstill vertikalt",
+    "code": "Kode",
+    "collaborators": "Samarbeidarar",
+    "colorPicker": "Fargeveljar",
+    "convertToCode": "",
+    "copy": "Kopier",
+    "copyAsPng": "Kopier til utklippstavla som PNG",
+    "copyAsSvg": "Kopier til utklippstavla som SVG",
+    "copySource": "",
+    "copyStyles": "Kopier stilar",
+    "copyText": "",
+    "createContainerFromText": "",
+    "crossHatch": "Krysskravert",
+    "cut": "Klipp ut",
+    "decreaseFontSize": "Gjer skriftstorleik mindre",
+    "delete": "Slett",
+    "distributeHorizontally": "Sprei horisontalt",
+    "distributeVertically": "Sprei vertikalt",
+    "drawingCanvas": "Lerret",
+    "duplicateSelection": "Dupliser",
+    "edges": "Kanter",
+    "elementLock": {
+      "lock": "",
+      "lockAll": "",
+      "unlock": "",
+      "unlockAll": ""
+    },
+    "excalidrawLib": "Excalidraw-bibliotek",
+    "extraBold": "Ekstra tjukk",
+    "eyeDropper": "",
+    "fileTitle": "Filnamn",
+    "fill": "Fyll",
+    "flipHorizontal": "Vipp vassrett",
+    "flipVertical": "Vipp loddrett",
+    "fontFamily": "Skrifttype",
+    "fontSize": "Skriftstorleik",
+    "generate_text": "generat",
+    "group": "Grupper utval",
+    "hachure": "Skravert",
+    "handDrawn": "Handteikna",
+    "increaseFontSize": "Gjer skriftstorleik større",
+    "language": "Språk",
+    "large": "Stor",
+    "layers": "Lag",
+    "left": "Venstre",
+    "libraries": "Blad gjennom bibliotek",
+    "libraryLoadingMessage": "Laster bibliotek…",
+    "lineEditor": {
+      "edit": "",
+      "exit": ""
+    },
+    "link": {
+      "create": "Lag lenke",
+      "createEmbed": "",
+      "edit": "Rediger lenke",
+      "editEmbed": "",
+      "empty": "",
+      "label": "Lenke",
+      "labelEmbed": ""
+    },
+    "liveCollaboration": "",
+    "loadingScene": "Laster scene…",
+    "madeWithExcalidraw": "Laga med Excalidraw",
+    "medium": "Medium",
+    "moveCanvas": "Flytt lerretet",
+    "multiSelect": "Legg til element i utval",
+    "name": "Namn",
+    "normal": "Normal",
+    "opacity": "Synlegheit",
+    "paste": "Lim inn",
+    "pasteAsPlaintext": "",
+    "pasteCharts": "Lim inn diagram",
+    "pasteStyles": "Lim inn stilar",
+    "personalLib": "Personleg bibliotek",
+    "preview": "Preview",
+    "prompt": "",
+    "prompt_placeholder": "Beskriv det du vil se...",
+    "removeAllElementsFromFrame": "",
+    "removeFromLibrary": "Fjern frå bibliotek",
+    "right": "Høgre",
+    "round": "Rund",
+    "selectAll": "Vel alt",
+    "selectAllElementsInFrame": "",
+    "sendBackward": "Send bakover",
+    "sendToBack": "Send heilt bak",
+    "share": "Del",
+    "sharp": "Skarp",
+    "showBackground": "Vis fargeveljar for bakgrunn",
+    "showGrid": "Vis rutenett",
+    "showStroke": "Vis fargeveljar for linjer",
+    "sidebarLock": "",
+    "sloppiness": "Ujamnheit",
+    "small": "Liten",
+    "solid": "Solid",
+    "statusPublished": "",
+    "stroke": "Strek",
+    "strokeStyle": "Strekstil",
+    "strokeStyle_dashed": "Stipla",
+    "strokeStyle_dotted": "Prikka",
+    "strokeStyle_solid": "Solid",
+    "strokeWidth": "Strekbreidd",
+    "textAlign": "Tekstjustering",
+    "textToDiagram": "",
+    "thin": "Tynn",
+    "tips": "Nå bruker vi Mermaid som et mellomrom, så hvis du beskriver en kart, arbeidsverk, blomster, etc., får du de beste resultatene.",
+    "toggleTheme": "Veksle tema",
+    "unbindText": "Avbind tekst",
+    "ungroup": "Avgrupper utval",
+    "untitled": "Utan namn",
+    "veryLarge": "Svært stor",
+    "viewMode": "Visningsmodus",
+    "yourName": "Namnet ditt",
+    "zigzag": ""
+  },
+  "library": {
+    "hint_emptyLibrary": "",
+    "hint_emptyPrivateLibrary": "",
+    "noItems": ""
+  },
+  "logo": {
+    "title": "AI tegner brett"
+  },
+  "mermaid": {
+    "button": "",
+    "description": "",
+    "preview": "",
+    "syntax": "",
+    "title": ""
+  },
+  "officialWebsite": {
+    "title": "Brokk det offisielle nettstedet til 302,AI"
+  },
+  "overwriteConfirm": {
+    "action": {
+      "excalidrawPlus": {
+        "button": "",
+        "description": "",
+        "title": ""
+      },
+      "exportToImage": {
+        "button": "",
+        "description": "",
+        "title": ""
+      },
+      "saveToDisk": {
+        "button": "",
+        "description": "",
+        "title": ""
+      }
+    },
+    "modal": {
+      "loadFromFile": {
+        "button": "",
+        "description": "",
+        "title": ""
+      },
+      "shareableLink": {
+        "button": "",
+        "description": "",
+        "title": ""
+      }
+    }
+  },
+  "publishDialog": {
+    "atleastOneLibItem": "Ver vennleg å markere minst eitt bibliotekselement for å starte",
+    "authorName": "Eigaren sitt namn",
+    "errors": {
+      "required": "Kravt",
+      "website": "Fyll inn ein gyldig URL"
+    },
+    "githubUsername": "GitHub-brukarnamn",
+    "itemName": "Elementnamn",
+    "libraryDesc": "Bibliotekskildring",
+    "libraryName": "Biblioteknamn",
+    "noteDescription": "Send inn biblioteket ditt til inkludering i <link>den offentlege bibliotek-kjeldekoda</link>slik at andre kan bruke det i teikningane deira.",
+    "noteGuidelines": "Biblioteket må godkjennast manuelt fyrst. Ver vennleg å lese <link>retningslinjene</link> før du sender inn. Du kjem til å trenge ein GitHub-konto for å kommunisere og gjere endringar dersom kravt, men det er ikkje strengt naudsynt.",
+    "noteItems": "Kvart bibliotekselement må ha eit eige namn, slik at det er mogleg å filtrere. Dei følgande bibliotekselementa blir inkludert:",
+    "noteLicense": "Ved å sende inn godkjenner du at biblioteket vert publisert under <link>MIT-lisensen, </link>som kort sagt betyr at kven som helst kan bruke det utan avgrensingar.",
+    "placeholder": {
+      "authorName": "Namnet eller brukarnamnet ditt",
+      "githubHandle": "GitHub-brukarnamn (valfritt), slik at du kan redigere bibiloteket når det er sendt inn til vurdering",
+      "libraryDesc": "Skildring av biblioteket ditt sånn at andre forstår bruken av det",
+      "libraryName": "Namnet på biblioteket ditt",
+      "twitterHandle": "Twitter-brukarnamn (valfritt), så vi veit kven vi skal kreditere på Twitter",
+      "website": "Lenke til den personlege nettstaden din eller ein anna stad (valfritt)"
+    },
+    "republishWarning": "",
+    "title": "Publiser bibliotek",
+    "twitterUsername": "Twitter-brukarnamn",
+    "website": "Nettstad"
+  },
+  "publishSuccessDialog": {
+    "content": "Tusen takk {{authorName}}! Biblioteket ditt har blitt sendt inn til gjennomgang. Du kan halde styr på status<link>her</link>",
+    "title": "Bibliotek innsendt"
+  },
+  "roomDialog": {
+    "button_startSession": "Start økt",
+    "button_stopSession": "Stopp økt",
+    "desc_exitSession": "Dersom du avsluttar økta blir du kopla frå rommet, men du kan halde fram med å arbeide med scena lokalt. Ver merksam på at dette ikkje vil påverke andre personar, og desse vil framleis ha moglegheit til å samarbeide på deira eigen versjon.",
+    "desc_inProgressIntro": "Sanntids-samarbeidsøkt er no i gang.",
+    "desc_intro": "Du kan invitere personar til scena di for å samarbeide med deg.",
+    "desc_privacy": "Ta det med ro; økta brukar ende-til-ende-kryptering, så alt du teiknar held fram med å vere privat. Ikkje ein gong serveren vår kan sjå kva du lagar.",
+    "desc_shareLink": "Del denne lenka med dei du vil samarbeide med:",
+    "shareTitle": "Bli med på eit sanntidssamarbeid på Excalidraw"
+  },
+  "stats": {
+    "angle": "Vinkel",
+    "element": "Element",
+    "elements": "Element",
+    "height": "Høgde",
+    "scene": "Scene",
+    "selected": "Valde",
+    "storage": "Lagring",
+    "title": "Statistikk for nerdar",
+    "total": "Totalt",
+    "version": "Versjon",
+    "versionCopy": "Klikk for å kopiere",
+    "versionNotAvailable": "Versjonen er ikkje tilgjengeleg",
+    "width": "Breidde"
+  },
+  "tipsButton": {
+    "title": "Informasjon om verktøy"
+  },
+  "toast": {
+    "addedToLibrary": "Lagt til i bibliotek",
+    "canvas": "lerret",
+    "copyStyles": "Kopierte stilane.",
+    "copyToClipboard": "Kopiert til utklippstavla.",
+    "copyToClipboardAsPng": "Kopierte {{exportSelection}} til utklippstavla som PNG\n({{exportColorScheme}})",
+    "fileSaved": "Fila er lagra.",
+    "fileSavedToFilename": "Lagra som {filename}",
+    "pasteAsSingleElement": "",
+    "selection": "val",
+    "unableToEmbed": "",
+    "unrecognizedLinkFormat": ""
+  },
+  "toolBar": {
+    "arrow": "Pil",
+    "diamond": "Diamant",
+    "ellipse": "Ellipse",
+    "embeddable": "",
+    "eraser": "Viskelêr",
+    "extraTools": "",
+    "frame": "",
+    "freedraw": "Teikn",
+    "hand": "",
+    "image": "Sett in bilete",
+    "laser": "",
+    "library": "Bibliotek",
+    "line": "Linje",
+    "link": "Legg til/ oppdater lenke til valt figur",
+    "lock": "Hald fram med valt verktøy",
+    "magicSettings": "",
+    "magicframe": "",
+    "mermaidToExcalidraw": "",
+    "penMode": "",
+    "rectangle": "Rektangel",
+    "selection": "Vel",
+    "text": "Tekst"
+  },
+  "welcomeScreen": {
+    "app": {
+      "center_heading": "",
+      "center_heading_plus": "",
+      "menuHint": ""
+    },
+    "defaults": {
+      "center_heading": "",
+      "helpHint": "",
+      "menuHint": "",
+      "toolbarHint": ""
+    }
+  }
+}
