@@ -717,7 +717,7 @@ export default function ChatAssistantWidget() {
                 }}
               />
               <div style={{ fontWeight: 700 }}>دستیار هوش مصنوعی نواندیشان</div>
-              <div style={{ marginInlineStart: "auto", ...styles.badgeLive }}>
+              <div style={{  ...styles.badgeLive }}>
                 <span style={{ width: 8, height: 8, borderRadius: 9999, background: busy ? P.warn : P.ok, display: "inline-block" }} />
                 {busy ? "در حال تولید…" : "آماده"}
                 <button
