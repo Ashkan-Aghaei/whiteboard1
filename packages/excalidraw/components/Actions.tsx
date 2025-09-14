@@ -317,11 +317,12 @@ export const ShapesSwitcher = ({
                   type: value,
                   insertOnCanvasDirectly: pointerType !== "mouse",
                 });
-              } else if (value === "textToDiagram") {
-                trackEvent("ai", "dialog open", "ttd");
-                setAppState({
-                  openDialog: { name: "ttd", tab: "text-to-diagram" },
-                });
+              } else if ((value as string) === "textToDiagram") {
+    // ↑ وایدن به string تا TS2367 نده (union فعلی value "textToDiagram" رو شامل نمی‌شه)
+    trackEvent("ai", "dialog open", "ttd");
+    setAppState({
+      openDialog: { name: "ttd", tab: "text-to-diagram" },
+    });
               } else {
                 app.setActiveTool({ type: value });
               }
