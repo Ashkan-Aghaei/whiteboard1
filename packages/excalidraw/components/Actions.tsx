@@ -253,6 +253,32 @@ export const SelectedShapeActions = ({
   );
 };
 
+type ToolType = UIAppState["activeTool"]["type"];
+type RegularTool = Exclude<ToolType, "image" | "custom">;
+
+const REGULAR_TOOLS: readonly RegularTool[] = [
+  "selection",
+  "rectangle",
+  "diamond",
+  "ellipse",
+  "arrow",
+  "line",
+  "freedraw",
+  "text",
+  "eraser",
+  "hand",
+  "frame",
+  "magicframe",
+  "chat",
+  "textToDiagram",
+  "embeddable",
+  "laser",
+] as const;
+
+const isRegularTool = (v: unknown): v is RegularTool =>
+  typeof v === "string" && (REGULAR_TOOLS as readonly string[]).includes(v);
+
+
 export const ShapesSwitcher = ({
   activeTool,
   appState,
