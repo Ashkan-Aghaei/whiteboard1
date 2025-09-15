@@ -4370,7 +4370,7 @@ if (shape === "chat") {
                   : ARROW_TYPE.sharp,
             }));
           }
-          this.setActiveTool({ type: shape });
+           this.setActiveTool({ type: "selection" });
           event.stopPropagation();
         } else if (event.key === KEYS.Q) {
           this.toggleLock("keyboard");
