@@ -18,6 +18,8 @@ function calculateSelectionArea() {
 }
 
 const CHATMENU_WIDTH = 490;
+interface Rect { x: number; y: number; width: number; height: number }
+const [area, setArea] = useState<Rect>({ x: 0, y: 0, width: 0, height: 0 });
 
 function SelectionArea(props: {
   isDistinguish: boolean;
@@ -38,21 +40,24 @@ function SelectionArea(props: {
   const captureArea = useCallback(() => {
     const node = document.body;
     const options: Options = {
-      width: area.width - CHATMENU_WIDTH,
-      height: area.height,
-      style: {
-        transform: `translate(${-area.x}px, ${-area.y}px)`,
-        "transform-origin": "top left",
-      },
-      filter: (node) => {
-        // @ts-ignore
-        return (
-          !node.classList ||
-          (!node.classList.contains("App-menu_top") &&
-            !node.classList.contains("App-menu_bottom"))
-        );
-      },
-    };
+  width: area.width - CHATMENU_WIDTH,
+  height: area.height,
+  style: {
+    transform: `translate(${-area.x}px, ${-area.y}px)`,
+    "transform-origin": "top left",
+  },
+  filter: (node: Node) => {
+    // اگر HTMLElement نباشه، کلاً فیلترش نکن
+    if (!(node instanceof HTMLElement)) return true;
+
+    // فقط منوهای بالایی/پایینی ChatMenu رو از اسکرین‌شات حذف کن
+    return (
+      !node.classList.contains("App-menu_top") &&
+      !node.classList.contains("App-menu_bottom")
+    );
+  },
+};
+
 
     domtoimage
       .toPng(node, options)
