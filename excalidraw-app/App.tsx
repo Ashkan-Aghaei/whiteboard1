@@ -139,6 +139,27 @@ import "react-toastify/dist/ReactToastify.css";
 import ScriptLoader from "./ScriptLoader";
 //gpt
 
+// ✅ ابزارهای مجاز مطابق یونین رسمی
+const ALLOWED_TOOL_TYPES = [
+  "line", "text", "arrow", "diamond", "selection", "rectangle", "ellipse",
+  "freedraw", "image", "frame", "magicframe", "embeddable", "eraser",
+  "hand", "chat", "textToDiagram", "laser", "custom",
+] as const;
+
+// از آرایه‌ی بالا خودِ یونین را می‌سازیم؛ نیازی به AppState import نیست
+type ToolType = typeof ALLOWED_TOOL_TYPES[number];
+
+const TOOL_SET: ReadonlySet<string> = new Set(ALLOWED_TOOL_TYPES as readonly string[]);
+
+/** اگر مقدار ورودی جزو ابزارهای مجاز نباشه، به "selection" برمی‌گردونه */
+function coerceToolType(value: unknown): ToolType {
+  return (typeof value === "string" && TOOL_SET.has(value))
+    ? (value as ToolType)
+    : "selection";
+}
+
+
+
 // ... import های موجود
 import ChatAssistantWidget from "./components/ChatAssistantWidget";
 
