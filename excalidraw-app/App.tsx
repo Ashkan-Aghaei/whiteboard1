@@ -373,17 +373,18 @@ const ExcalidrawWrapper = () => {
   useEffect(() => {
     if (!excalidrawAPI) return;
 
-    const isDrawingTool = (tool?: string) =>
-      ["freedraw", "draw", "pen", "laser", "highlighter"].includes(tool || "");
+    // نوع دقیق از AppState گرفته می‌شود تا با یونین ابزارها همخوان باشد
+const isDrawingTool = (tool?: AppState["activeTool"]["type"]) =>
+  (tool === "freedraw" || tool === "laser");
 
     const onPointerDown = (ev: PointerEvent) => {
-      try {
-        const tool = excalidrawAPI.getAppState()?.activeTool?.type;
-        if (isDrawingTool(tool) && ev.buttons === 1) {
-          safeDispatchWBEvent("wb:drawing-start");
-        }
-      } catch {}
-    };
+  try {
+    const tool = excalidrawAPI.getAppState()?.activeTool?.type as AppState["activeTool"]["type"] | undefined;
+    if (isDrawingTool(tool) && ev.buttons === 1) {
+      safeDispatchWBEvent("wb:drawing-start");
+    }
+  } catch {}
+};
 
     const onPointerUp = () => {
       safeDispatchWBEvent("wb:drawing-end");
@@ -665,13 +666,15 @@ const ExcalidrawWrapper = () => {
     // =================== GPT FIX: فقط اطلاع نوع ابزار (ایمن) ==================
     try {
       const tool = appState?.activeTool?.type ?? "";
-      const isDrawingTool = ["freedraw", "draw", "pen", "laser", "highlighter"].includes(tool);
-      if (import.meta.env.DEV) {
-        console.debug("[WB→Chat] tool:", tool, "isDrawingTool:", isDrawingTool);
-      }
-      safeDispatchWBEvent("whiteboard:toolchange", {
-        tool: isDrawingTool ? "pen" : "select",
-      });
+     const isDrawingToolNow =
+  appState?.activeTool?.type === "freedraw" ||
+  appState?.activeTool?.type === "laser";
+
+safeDispatchWBEvent("whiteboard:toolchange", {
+  // این مقدار فقط برای UI خودته و به تایپ‌های Excalidraw ربطی نداره
+  tool: isDrawingToolNow ? "pen" : "select",
+});
+
     } catch (err) {
       if (import.meta.env.DEV) {
         console.warn("toolchange dispatch failed:", err);
